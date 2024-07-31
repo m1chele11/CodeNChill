@@ -17,11 +17,11 @@ def merge(nums1, m, nums2, n) -> None:
     while i >= 0 and j >= 0:
         if nums1[i] > nums2[j]:
             print(nums1[i], nums2[j])
-            nums1[last] = nums1[i]
+            nums1[last] = nums1[i]  # placing larger elem here
             print(nums1[last],"in if", nums1)
             i -= 1
         else:
-            nums1[last] = nums2[j]
+            nums1[last] = nums2[j]  # placing larger elem here
             print(nums1[i], nums2[j])
             print(nums1[last], "in else", nums1)
             j -= 1
@@ -29,7 +29,7 @@ def merge(nums1, m, nums2, n) -> None:
 
     # Fill nums1 with remaining elements of nums2 (if any)
     while j >= 0:
-        nums1[last] = nums2[j]
+        nums1[last] = nums2[j]  
         print("2nd while")
         j -= 1
         last -= 1
