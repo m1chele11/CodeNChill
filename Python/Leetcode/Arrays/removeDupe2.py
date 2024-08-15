@@ -45,4 +45,10 @@ def removeDuplicates(nums: List[int]) -> int:
 nums = [1, 1, 1, 2, 2, 3]
 k = removeDuplicates(nums)
 print(f"Array after removal: {nums[:k]}, Length: {k}")
-    
+
+# Test case: 1
+nums1 = [0, 0, 1, 1, 1, 1, 2, 3, 3]
+k1 = removeDuplicates(nums1)
+print(f"Test case 1 - Array after removal: {nums1[:k1]}, Length: {k1}")
+
+# Test case: 2
